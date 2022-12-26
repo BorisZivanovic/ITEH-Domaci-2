@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/* Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
@@ -26,4 +26,4 @@ Route::middleware('auth:sanctum')->group( function () {
     Route::resource('tipovi', \App\Http\Controllers\TipController::class);
     Route::resource('proizvodjaci', \App\Http\Controllers\ProizvodjacController::class);
     Route::resource('avioni', \App\Http\Controllers\AvionController::class);
-}); */
+}); 
